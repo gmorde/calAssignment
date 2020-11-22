@@ -1,0 +1,34 @@
+:host {
+
+  .content-wrapper {
+    position: relative;
+
+    .banner {
+      height: 450px;
+      background: url('../../../assets/images/banner.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .content {
+
+      .content-container {
+
+        .content-sign-in-wrapper {
+
+          .content-sign-in {
+
+          }
+        }
+
+        .content-register-wrapper {
+
+          .content-register {
+
+          }
+        }
+      }
+    }
+  }
+}

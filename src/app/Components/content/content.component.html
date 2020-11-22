@@ -1,0 +1,63 @@
+<main class="content-wrapper">
+  <div class="banner"></div>
+  <div class="content">
+    <div class="content-container">
+      <div class="content-sign-in-wrapper">
+        <div class="content-sign-in">
+          <p>SIGN IN</p>
+          <form [formGroup]="signInForm" (ngSubmit)="onSubmitSignInForm(signInForm.value)">
+            <div>
+              <label for="email">
+                Your Email..
+              </label>
+              <input id="email" type="text" formControlName="email">
+            </div>
+            <div>
+              <label for="password">
+                Your Password..
+              </label>
+              <input id="password" type="text" formControlName="password">
+            </div>
+            <button class="button" type="submit">SIGN IN</button>
+            <p>Forgot your Password</p>
+          </form>
+        </div>
+      </div>
+      <div class="content-register-wrapper">
+        <div class="content-register">
+          <p>REGISTER</p>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmitRegisterForm(registerForm.value)">
+            <div>
+              <label for="email">
+                Your Email..
+              </label>
+              <input id="email" type="text" formControlName="email">
+            </div>
+            <div>
+              <label for="password">
+                Your Password..
+              </label>
+              <input id="password" type="text" formControlName="password">
+            </div>
+            <div>
+              <label for="confirmPassword">
+                Confirm Password..
+              </label>
+              <input id="confirmPassword" type="text" formControlName="confirmPassword">
+            </div>
+            <div>
+              <label for="signUp">
+                Sign up for exclusive updates, discounts, new arrivals, contests, and more!
+              </label>
+              <input id="signUp" type="checkbox" formControlName="signUp">
+            </div>
+            <button class="button" type="submit">CREATE ACCOUNT</button>
+            <div>
+              <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
